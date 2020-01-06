@@ -23,6 +23,11 @@
     bottom: 30%;
     left: 50%;
 
+    @media screen and (max-width: 1000px) {
+      bottom: 10%;
+      left: 60%;
+    }
+
     .button {
       display: inline-block;
       width: 130px;
