@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import Spirograph from "../../images/spirograph.svg";
 
 class Skills extends Component {
   render() {
     return (
       <div className="skills-container">
         <div className="left">
-          {" "}
           <div className="skills-text">
             <h1>Skills</h1>
             <p>
@@ -69,7 +69,9 @@ class Skills extends Component {
             </ul>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <img src={Spirograph} alt="Spirograph"/>
+        </div>
       </div>
     );
   }
