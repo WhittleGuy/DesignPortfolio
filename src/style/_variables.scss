@@ -5,15 +5,16 @@ $deepViolet: #1b065e;
 $purplePizzazz: #ff47da;
 
 $headingSize: 4em;
-$paraSize: 1.2em;
+$paraSize: 1em;
+$emphSize: 1.2em;
 
 $primary: $jet;
 $secondary: $ebony;
 $tertiary: $classicRose;
 
 $headerFont: "Oswald", sans-serif;
-$paraFont: "Indie Flower", cursive;
-$decFont: "Montserrat", sans-serif;
+$paraFont: "Montserrat", sans-serif;
+$emphFont: "Indie Flower", cursive;
 
 @mixin header-css {
   font-family: $headerFont;
@@ -45,6 +46,16 @@ $decFont: "Montserrat", sans-serif;
   font-family: $paraFont;
   color: white;
   font-size: $paraSize;
+
+  @media screen and (max-width: 900px) {
+    font-size: 0.625em;
+  }
+}
+
+@mixin emphasis-css {
+  font-family: $emphFont;
+  color: white;
+  font-size: $emphSize;
 
   @media screen and (max-width: 900px) {
     font-size: 0.625em;
