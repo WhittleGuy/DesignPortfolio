@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb52c264cf1d5e414633cbd712712184",
+    "revision": "1769d8568c0617adaf5cdb78205422ed",
     "url": "/index.html"
   },
   {
-    "revision": "122b4f420e670c82c47a",
-    "url": "/static/css/main.291bcf85.chunk.css"
+    "revision": "cceed0d3212902a3911a",
+    "url": "/static/css/main.f833d8da.chunk.css"
   },
   {
-    "revision": "837d1a43316a55cd2cb3",
-    "url": "/static/js/2.3cfe505d.chunk.js"
+    "revision": "b1f7597c0008ceef2138",
+    "url": "/static/js/2.0b1fe21e.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/static/js/2.3cfe505d.chunk.js.LICENSE"
+    "url": "/static/js/2.0b1fe21e.chunk.js.LICENSE"
   },
   {
-    "revision": "122b4f420e670c82c47a",
-    "url": "/static/js/main.0e0298d8.chunk.js"
+    "revision": "cceed0d3212902a3911a",
+    "url": "/static/js/main.8f1d18c7.chunk.js"
   },
   {
     "revision": "bc0a437ac56b6d303c33",
     "url": "/static/js/runtime-main.ca2d27e8.js"
+  },
+  {
+    "revision": "4a8c6edeb45c88b583d25c7934a2d13d",
+    "url": "/static/media/BW_Logo.4a8c6ede.svg"
   },
   {
     "revision": "a0a6627d1132928c2c3bbb3ed0002775",
