@@ -11,9 +11,9 @@ nav {
   z-index: 5;
 
   .logo-link {
-    @include header-css;
-    text-decoration: none;
-    font-size: 2.75em;
+    .spirograph{
+      width: 90%;
+    }
   }
 
   .nav-links {
