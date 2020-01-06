@@ -1,0 +1,52 @@
+$classicRose: #ffcfe2;
+$jet: #111111;
+$ebony: #2d2d2e;
+$deepViolet: #1b065e;
+$purplePizzazz: #ff47da;
+
+$headingSize: 4em;
+$paraSize: 1.2em;
+
+$primary: $jet;
+$secondary: $ebony;
+$tertiary: $classicRose;
+
+$headerFont: "Oswald", sans-serif;
+$paraFont: "Indie Flower", cursive;
+$decFont: "Montserrat", sans-serif;
+
+@mixin header-css {
+  font-family: $headerFont;
+  color: $tertiary;
+  font-size: $headingSize;
+  transform: skew(15deg);
+  text-shadow: -2px 2px $purplePizzazz, -4px 4px black;
+  margin: 20px 0;
+
+  @media screen and (max-width: 900px) {
+    font-size: 2em;
+  }
+}
+
+@mixin sub-header-css {
+  font-family: $headerFont;
+  color: $tertiary;
+  font-size: $headingSize/2;
+  transform: skew(15deg);
+  text-shadow: -2px 2px $purplePizzazz, -4px 4px black;
+  margin: 20px 0;
+
+  @media screen and (max-width: 900px) {
+    font-size: 2em;
+  }
+}
+
+@mixin para-css {
+  font-family: $paraFont;
+  color: white;
+  font-size: $paraSize;
+
+  @media screen and (max-width: 900px) {
+    font-size: 0.625em;
+  }
+}

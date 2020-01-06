@@ -1,0 +1,84 @@
+nav {
+  width: 45px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 10% 90%;
+  background: $primary;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+  z-index: 5;
+
+  .logo-link {
+    @include header-css;
+    text-decoration: none;
+    font-size: 2.75em;
+  }
+
+  .nav-links {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: rows;
+    grid-template-rows: 28% 1fr 1fr 1fr 1fr 1fr 32%;
+    place-items: start center;
+
+    .home {
+      grid-area: "home";
+      grid-row-start: 2;
+    }
+
+    .home:hover:after {
+      content: "Home";
+    }
+
+    .about {
+      grid-area: "about";
+      grid-row-start: 3;
+    }
+    .about:hover:after {
+      content: "About";
+    }
+
+    .skills {
+      grid-area: "skills";
+      grid-row-start: 4;
+    }
+    .skills:hover:after {
+      content: "Skills";
+    }
+
+    .projects {
+      grid-area: "projects";
+      grid-row-start: 5;
+    }
+    .projects:hover:after {
+      content: "Projects";
+    }
+
+    .contact {
+      grid-area: "contact";
+      grid-row-start: 6;
+    }
+    .contact:hover:after {
+      content: "Contact";
+    }
+
+    .home,
+    .about,
+    .skills,
+    .projects,
+    .contact {
+      width: 100%;
+      text-decoration: none;
+      color: $tertiary;
+      font-family: "Cairo", sans-serif;
+      font-size: 12px;
+      font-weight: 200;
+      text-align: center;
+      outline: thick;
+      outline-color: white;
+    }
+  }
+}

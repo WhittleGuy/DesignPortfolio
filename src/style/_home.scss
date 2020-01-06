@@ -1,0 +1,53 @@
+.home-container {
+  width: calc(100%-45px);
+  margin-left: 45px;
+  background: $secondary;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+  align-items: center;
+  justify-items: center;
+
+  .heading {
+    @include header-css;
+  }
+
+  .subtitle {
+    @include para-css;
+    transform: translateX(15%);
+  }
+
+  .external-links {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+
+    .button {
+      display: inline-block;
+      width: 130px;
+      height: 50px;
+      padding: 10px;
+      margin: 10px 10px 10px 10px;
+      color: $tertiary;
+      text-align: center;
+      background: $primary;
+      text-decoration: underline;
+      border-radius: 25px;
+      border-style: solid;
+      text-transform: uppercase;
+      font-family: "Oswald";
+      transition: 0.2s;
+      transform: translateX(-75%);
+      box-shadow: 6px 6px 4px $primary;
+
+      &:hover {
+        color: $secondary;
+        background-color: $tertiary;
+        border: $tertiary solid;
+        box-shadow: 0 0 10px $tertiary;
+        transform: scale(1.1) translateX(-67.5%);
+      }
+    }
+  }
+}

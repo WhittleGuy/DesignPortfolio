@@ -1,0 +1,44 @@
+.skills-container {
+  width: calc(100%-45px);
+  margin-left: 45px;
+  background: $secondary;
+  min-height: 100vh;
+
+  .right {
+    min-height: 100vh;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+
+    .skills-text {
+      padding: 25px 0 0 25px;
+      h1 {
+        @include header-css;
+      }
+
+      h3 {
+        @include sub-header-css;
+      }
+
+      ul {
+        width: 100%;
+        list-style: none;
+        display: grid;
+        grid-template:
+          "1fr 1fr 1fr"
+          "1fr 1fr 1fr"
+          "1fr 1fr 1fr";
+        align-items: center;
+        justify-items: left;
+
+        li {
+          @include para-css;
+        }
+      }
+
+      p {
+        @include para-css;
+      }
+    }
+  }
+}
