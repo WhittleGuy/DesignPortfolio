@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import Spirograph from "../../images/spirograph.svg";
+import Logo from "../../images/BW_Logo.svg";
 
 class Nav extends Component {
   render() {
@@ -9,7 +9,7 @@ class Nav extends Component {
       <>
         <nav>
           <Link className="logo-link" to="./home">
-            <img className="spirograph" src={Spirograph} alt="spirograph" />
+            <img className="logo" src={Logo} alt="logo" />
           </Link>
 
           <div className="nav-links">
