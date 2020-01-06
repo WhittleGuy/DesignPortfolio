@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import Spirograph from "../../images/spirograph.svg";
+
 class Nav extends Component {
   render() {
     return (
       <>
         <nav>
           <Link className="logo-link" to="./home">
-            W
+            <img className="spirograph" src={Spirograph} alt="spirograph" />
           </Link>
 
           <div className="nav-links">
