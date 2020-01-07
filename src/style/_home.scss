@@ -2,10 +2,10 @@
   width: calc(100%-45px);
   margin-left: 45px;
   background: $secondary;
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 90% 10%;
+  grid-template-rows: 70% 30%;
   align-items: center;
   justify-items: center;
 
@@ -20,7 +20,7 @@
 
   .external-links {
     position: absolute;
-    bottom: 20%;
+    bottom: 35%;
     left: 50%;
 
     @media screen and (max-width: 1000px) {
@@ -54,5 +54,11 @@
         transform: scale(1.1) translateX(-67.5%);
       }
     }
+  }
+
+  .sines {
+    width: calc(100vw - 45px);
+    position: absolute;
+    top: 80vh;
   }
 }

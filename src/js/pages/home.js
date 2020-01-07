@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Sines from "../../images/Sines.svg";
 
 class Home extends Component {
   render() {
@@ -25,6 +26,8 @@ class Home extends Component {
             </a>
           </div>
         </div>
+
+        <img className="sines" src={Sines} alt="Sines" />
       </div>
     );
   }

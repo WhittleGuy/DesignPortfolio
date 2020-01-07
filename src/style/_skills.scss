@@ -6,19 +6,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  .right {
-
-    height: 100vh;
-
-    img{
-      width: 85%;
-    }
-  }
-
   .left {
     max-height: 100vh;
     display: grid;
     grid-template-rows: 2fr 1fr;
+    width: 95%;
 
     @media screen and (max-width: 1000px) {
       width: 100%;
@@ -54,6 +46,17 @@
       p {
         @include para-css;
       }
+    }
+  }
+
+  .right {
+    display: grid;
+    height: 100vh;
+
+    img {
+      width: 90%;
+      align-self: center;
+      justify-self: center;
     }
   }
 }

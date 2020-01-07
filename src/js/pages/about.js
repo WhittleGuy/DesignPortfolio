@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Timeline from "../../images/Timeline.svg";
-import Whittle from "../../images/Whittle.svg";
+import Penrose from "../../images/Penrose.svg";
 
 class About extends Component {
   render() {
@@ -25,7 +25,9 @@ class About extends Component {
           </div>
           <img className="timeline" src={Timeline} alt="timeline" />
         </div>
-        <div className="right"><img className="whittle" src={Whittle} alt="whittle" /></div>
+        <div className="right">
+          <img className="penrose" src={Penrose} alt="Penrose" />
+        </div>
       </div>
     );
   }
