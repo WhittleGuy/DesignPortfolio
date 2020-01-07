@@ -42,6 +42,9 @@ class Skills extends Component {
               <li>
                 <i className="fab fa-google" /> Google Docs / Drive
               </li>
+              <li>
+                <i className="fa fa-headphones-alt" /> Analog Audio Mixing
+              </li>
             </ul>
             <h3>Soft Skills</h3>
             <ul>
@@ -70,7 +73,7 @@ class Skills extends Component {
           </div>
         </div>
         <div className="right">
-          <img src={Spirograph} alt="Spirograph"/>
+          <img src={Spirograph} alt="Spirograph" />
         </div>
       </div>
     );
