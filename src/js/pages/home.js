@@ -21,7 +21,7 @@ class Home extends Component {
             <a className="button" href="https://www.google.com">
               Resume
             </a>
-            <a className="button" href="https://www.google.com">
+            <a className="button" href="#/contact">
               Contact Me
             </a>
           </div>

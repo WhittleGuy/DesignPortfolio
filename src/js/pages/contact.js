@@ -9,7 +9,7 @@ class Contact extends Component {
             <h1>Contact Me</h1>
             <p>
               I enjoy working with others to realize their vision, whether that
-              be through design, phtoography, music, live audio, or office work.
+              be through design, photography, music, live audio, or office work.
               <br />
               <br />
               Do you have a concept that needs a fresh set of eyes, some honing
