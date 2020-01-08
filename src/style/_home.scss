@@ -1,18 +1,13 @@
 .home-container {
-  @include main-window;
   grid-template-columns: 1fr;
   grid-template-rows: 70% 30%;
   @include grid-center;
+
   @media screen and (max-width: 1000px) {
     height: 100vh;
   }
 
-  .heading {
-    @include header-css;
-  }
-
   .subtitle {
-    @include emphasis-css;
     transform: translateX(15%);
   }
 
@@ -23,15 +18,4 @@
     transform: translateX(25%);
     @include grid-center;
   }
-
-  .button {
-    @include button-css;
-  }
-}
-
-.sines {
-  width: calc(100vw - 45px);
-  position: absolute;
-  bottom: 15px;
-  left: 45px;
 }

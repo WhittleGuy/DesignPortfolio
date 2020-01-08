@@ -1,6 +1,210 @@
 @import "./variables";
 @import "./nav";
 
+//! MASTER WINDOW STYLING
+
+.main-window {
+  width: calc(100%-45px);
+  height: 100vh;
+  margin-left: 45px;
+  padding: 0px 25px;
+  background: $secondary;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+    min-height: 150vh;
+  }
+}
+
+.left,
+.right {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background: $secondary;
+  background-size: cover;
+}
+
+//! MASTER GRAPHIC STYLING
+
+.half-graphic {
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+}
+
+.bottom-graphic {
+  width: calc(100vw - 45px);
+  position: absolute;
+  bottom: 15px;
+  left: 45px;
+}
+
+//! MASTER COMPONENT STYLING
+.button {
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  padding: 10px;
+  margin: 20px 0;
+
+  color: $tertiary;
+  text-align: center;
+  background: transparent;
+
+  border-style: solid;
+  border-radius: 25px;
+
+  text-transform: uppercase;
+  font-family: "Oswald";
+  text-decoration: underline;
+
+  transition: 0.2s;
+  box-shadow: 6px 6px 4px $primary;
+
+  @media screen and (max-width: 1000px) {
+    transform: scale(0.8);
+  }
+
+  &:hover {
+    color: $secondary;
+    background: $tertiary;
+    border: $tertiary solid;
+    box-shadow: 0 0 10px $tertiary;
+    transform: scale(1.1);
+
+    @media screen and (max-width: 1000px) {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.small-button {
+  width: 80px;
+  height: 30px;
+  margin: 20px 0;
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  color: $tertiary;
+  border: $tertiary solid;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  text-decoration: underline;
+  transition: 0.2s;
+  box-shadow: 6px 6px 4px $primary;
+
+  &:hover {
+    color: $secondary;
+    background: $tertiary;
+    border: $tertiary solid;
+    box-shadow: 0 0 10px $tertiary;
+    transform: scale(1.1);
+  }
+}
+
+.twitter-container {
+  width: 100%;
+
+  .twitter {
+    width: 150px;
+    height: 40px;
+    background: $twitterBlue;
+    color: white;
+    font-family: "helvetica", sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: grid;
+    place-items: center center;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+  }
+}
+
+.client-disclaimer {
+  text-align: center;
+  p {
+    width: 100%;
+    font-family: $paraFont;
+    font-size: $paraFont;
+
+    color: white;
+  }
+}
+
+//! MASTER TEXT STYLING
+
+h1 {
+  margin: 0 0 20px 0;
+  @include headerSpec;
+  font-size: $headSize;
+
+  @media screen and (max-width: 1000px) {
+    font-size: $headSize/2;
+  }
+}
+
+h3 {
+  margin: 30 0 10px 0;
+  @include headerSpec;
+  font-size: $subHeadSize;
+  text-align: center;
+
+  @media screen and (max-width: 1000px) {
+    font-size: $subHeadSize/2;
+  }
+}
+
+p {
+  font-family: $paraFont;
+  font-size: $paraSize;
+  color: white;
+
+  @media screen and (max-width: 1000px) {
+    font-size: $paraSize/2;
+  }
+}
+
+ul {
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-family: $paraFont;
+  font-size: $paraSize;
+  color: white;
+  list-style: none;
+  display: grid;
+  grid-template:
+    "1fr 1fr 1fr"
+    "1fr 1fr 1fr"
+    "1fr 1fr 1fr";
+  align-items: center;
+  justify-items: left;
+
+  @media screen and (max-width: 1000px) {
+    font-size: $paraSize/2;
+  }
+
+  li {
+    margin: 5px 0;
+    font-family: $paraFont;
+    font-size: $paraSize;
+    color: white;
+
+    @media screen and (max-width: 1000px) {
+      font-size: $paraSize/2;
+    }
+  }
+}
+
+//! FINAL IMPORTS FOR OVERRIDES
+//// That means the weird projects .right pane will work correctly
+
 @import "./home";
 @import "./about";
 @import "./skills";

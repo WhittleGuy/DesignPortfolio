@@ -1,34 +1,7 @@
 .about-container {
-  @include main-window;
-
-  .left {
-    @include half-panel;
-
-    .about-text {
-      width: 100%;
-
-      h1 {
-        @include header-css;
-      }
-
-      p {
-        @include para-css;
-      }
-    }
-
-    .timeline {
-      width: 100%;
-      align-self: end;
-      padding-bottom: 20px;
-    }
-  }
-  .right {
-    @include half-panel;
-
-    .penrose {
-      width: 90%;
-      align-self: center;
-      justify-self: center;
-    }
+  .timeline {
+    width: 100%;
+    align-self: end;
+    padding-bottom: 20px;
   }
 }

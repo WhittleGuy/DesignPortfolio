@@ -1,285 +1,74 @@
+//Programmer: Brandon Whittle
+//Project: Design Portfolio
+//Date: January 8, 2020
+
+//!
+//?
+////
+//*
+//todo
+
+//! CONSTANTS
+
 $classicRose: #ffcfe2;
-$jet: #111111;
-$ebony: #181818;
-$deepViolet: #1b065e;
+$licorice: #111111;
+$eerieBlack: #181818;
+$maximumYellow: #f6f740;
+$pictonBlue: #44ccff;
 $purplePizzazz: #ff47da;
+
 $twitterBlue: #1da1f2;
 
-$headingSize: 4em;
+//! GLOBAL VARIABLES
+
+$primary: $licorice;
+$secondary: $eerieBlack;
+$tertiary: $classicRose;
+
+$headSize: 4em;
+$subHeadSize: 2em;
 $paraSize: 1em;
 $emphSize: 1.2em;
 
-$primary: $jet;
-$secondary: $ebony;
-$tertiary: $classicRose;
+$headCol: $purplePizzazz;
+$subHeadCol: $purplePizzazz;
+$paraCol: white;
+$emphCol: white;
 
-$headerFont: "Oswald", sans-serif;
+$headFont: "Oswald", sans-serif;
 $paraFont: "Montserrat", sans-serif;
 $emphFont: "Indie Flower", cursive;
 
-@mixin header-css {
-  font-family: $headerFont;
-  color: $tertiary;
-  font-size: $headingSize;
+//! TEXT TAG MIXINS
+
+@mixin headerSpec {
   transform: skew(15deg);
   text-shadow: -2px 2px $purplePizzazz, -4px 4px black;
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 900px) {
-    font-size: 2em;
-  }
-}
-
-@mixin sub-header-css {
-  font-family: $headerFont;
+  font-family: $headFont;
   color: $tertiary;
-  font-size: $headingSize/2;
-  transform: skew(15deg);
-  text-shadow: -2px 2px $purplePizzazz, -4px 4px black;
-  margin: 30px 0px 10px 0px;
-
-  @media screen and (max-width: 900px) {
-    font-size: 1em;
-  }
 }
 
-@mixin para-css {
-  font-family: $paraFont;
-  font-size: $paraSize;
-  color: white;
+//! SPECIAL TEXT MIXINS
 
-  @media screen and (max-width: 900px) {
-    font-size: 0.625em;
-  }
-}
-
-@mixin emphasis-css {
+@mixin emph-css {
   font-family: $emphFont;
+  font-size: $emphFont;
   color: white;
-  font-size: $emphSize;
-
-  @media screen and (max-width: 900px) {
-    font-size: 0.625em;
-  }
-}
-
-@mixin ul-css {
-  width: 100%;
-  list-style: none;
-  display: grid;
-  grid-template:
-    "1fr 1fr 1fr"
-    "1fr 1fr 1fr"
-    "1fr 1fr 1fr";
-  align-items: center;
-  justify-items: left;
-  margin-bottom: 20px;
-
-  li {
-    @include para-css;
-    margin: 5px 0;
-  }
-}
-
-@mixin disclaimer {
-  p {
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
-    color: white;
-    font-family: $paraFont;
-
-    a {
-      font-family: "helvetica", sans-serif;
-      text-decoration: none;
-      font-size: 1em;
-      color: $twitterBlue;
-    }
-  }
-}
-
-@mixin twitter {
-  width: 100%;
-  .twitter {
-    width: 150px;
-    height: 40px;
-    background: $twitterBlue;
-    color: white;
-    font-family: "helvetica", sans-serif;
-    font-size: 1.5em;
-    text-decoration: none;
-    display: grid;
-    place-items: center center;
-    border-radius: 20px;
-    justify-self: center;
-    align-self: center;
-    margin: auto;
-  }
-}
-
-@mixin main-window {
-  width: calc(100%-45px);
-  height: 100vh;
-  margin-left: 45px;
-  padding: 0px 25px;
-  background: $secondary;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 
   @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr;
-    grid-auto-flow: rows;
-    min-height: 150vh;
+    font-size: $emphFont/2;
   }
 }
 
-@mixin half-panel {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  background: $secondary;
-  background-size: cover;
-}
-
-@mixin half-graphic {
-  width: 100%;
-  align-self: center;
-  justify-self: center;
-  background: $secondary;
-  background-size: cover;
-}
+//! PAGE SETUP MIXINS
 
 @mixin grid-center {
   align-items: center;
   justify-items: center;
 }
 
-@mixin button-css {
-  display: inline-block;
-  width: 130px;
-  height: 50px;
-  padding: 10px;
-  margin: 20px 0;
-
-  color: $tertiary;
-  text-align: center;
-  background: transparent;
-
-  border-style: solid;
-  border-radius: 25px;
-
-  text-transform: uppercase;
-  font-family: "Oswald";
-  text-decoration: underline;
-
-  transition: 0.2s;
-  box-shadow: 6px 6px 4px $primary;
-
-  @media screen and (max-width: 1000px) {
-    transform: scale(0.8);
-  }
-
-  &:hover {
-    color: $secondary;
-    background: $tertiary;
-    border: $tertiary solid;
-    box-shadow: 0 0 10px $tertiary;
-    transform: scale(1.1);
-
-    @media screen and (max-width: 1000px) {
-      transform: scale(0.9);
-    }
-  }
-}
-
-@mixin small-button-css {
-  display: inline-block;
-  width: 80px;
-  height: 30px;
-  margin: 20px 0;
-
-  color: $tertiary;
-  text-align: center;
-  background: transparent;
-
-  border: $tertiary solid;
-  border-radius: 25px;
-
-  text-transform: uppercase;
-  font-family: "Oswald";
-  text-decoration: underline;
-
-  transition: 0.2s;
-  box-shadow: 6px 6px 4px $primary;
-
-  &:hover {
-    color: $secondary;
-    background: $tertiary;
-    border: $tertiary solid;
-    box-shadow: 0 0 10px $tertiary;
-    transform: scale(1.1);
-  }
-}
-
-@mixin card-panel-multi-section {
-  @include half-panel;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  right: 0;
-  width: 50%;
-
-  @media screen and (max-width: 1000px) {
-    left: calc(45px);
-    width: 90%;
-    top: 30vh;
-  }
-
-  .project-panels {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-
-    .project {
-      width: 100%;
-
-      h1 {
-        @include sub-header-css;
-        width: 100%;
-        text-align: center;
-      }
-
-      .tiles {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        margin-top: 30px;
-
-        .card {
-          width: 250px;
-          margin: 0px 10px;
-          padding: 0px 5px;
-          background: $secondary;
-          align-self: center;
-          justify-self: center;
-
-          .photo-container {
-            width: 100%;
-            height: 100%;
-            display: block;
-
-            img {
-              width: 100%;
-              display: block;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//! CONTACT FORM FIELD MIXIN
+//* Actually needs to exist here. Runs 3x. Pretty input fields.
 
 @mixin form-field($field, $type) {
   .#{$field} {
@@ -324,7 +113,13 @@ $emphFont: "Indie Flower", cursive;
   }
 
   .content-#{$field} {
-    @include emphasis-css;
+    font-family: $paraFont;
+    font-size: $paraSize;
+    color: white;
+
+    @media screen and (max-width: 1000px) {
+      font-size: $paraSize/2;
+    }
 
     position: absolute;
     bottom: 5px;

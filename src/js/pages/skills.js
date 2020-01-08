@@ -4,7 +4,7 @@ import Spirograph from "../../images/Graphics/spirograph.svg";
 class Skills extends Component {
   render() {
     return (
-      <div className="skills-container">
+      <div className="skills-container main-window">
         <div className="left">
           <div className="skills-text">
             <h1>Skills</h1>
@@ -73,7 +73,11 @@ class Skills extends Component {
           </div>
         </div>
         <div className="right">
-          <img src={Spirograph} alt="Spirograph" />
+          <img
+            className="spirograph half-graphic"
+            src={Spirograph}
+            alt="Spirograph"
+          />
         </div>
       </div>
     );

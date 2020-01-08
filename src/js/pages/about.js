@@ -5,7 +5,7 @@ import Penrose from "../../images/Graphics/Penrose.svg";
 class About extends Component {
   render() {
     return (
-      <div className="about-container">
+      <div className="about-container main-window">
         <div className="left">
           <div className="about-text">
             <h1>About</h1>
@@ -26,7 +26,7 @@ class About extends Component {
           <img className="timeline" src={Timeline} alt="timeline" />
         </div>
         <div className="right">
-          <img className="penrose" src={Penrose} alt="Penrose" />
+          <img className="penrose half-graphic" src={Penrose} alt="Penrose" />
         </div>
       </div>
     );

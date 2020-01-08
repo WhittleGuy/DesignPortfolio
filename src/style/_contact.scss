@@ -1,63 +1,30 @@
 .contact-container {
-  @include main-window;
+  @include form-field(name, input);
+  @include form-field(email, input);
+  @include form-field(message, textarea);
 
-  .left {
-    @include half-panel;
-
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-    }
-
-    .contact-text {
-      width: 100%;
-      padding: 0 0 0 25px;
-
-      h1 {
-        @include header-css;
-      }
-
-      p {
-        @include para-css;
-      }
-    }
-
-    @include form-field(name, input);
-    @include form-field(email, input);
-    @include form-field(message, textarea);
-
-    .message,
-    .message textarea {
-      height: 20vh;
-      resize: none;
-      font-family: "Montserrat", sans-serif;
-      font-size: 1em;
-    }
-
-    input {
-      font-family: "Montserrat", sans-serif;
-      font-size: 1em;
-    }
-
-    .content-message {
-      height: 50px;
-      top: 0.9em;
-    }
-
-    .submit-button-field {
-      width: 100%;
-      display: grid;
-      @include grid-center;
-      .submit-btn {
-        @include small-button-css;
-      }
-    }
+  .message,
+  .message textarea {
+    height: 20vh;
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
   }
 
-  .right {
-    @include half-panel;
+  input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+  }
 
-    .LineArt {
-      @include half-graphic;
-    }
+  .content-message {
+    height: 50px;
+    top: 0.9em;
+  }
+
+  .submit-button-field {
+    width: 100%;
+    display: grid;
+    @include grid-center;
+    font-size: 0.7em;
   }
 }

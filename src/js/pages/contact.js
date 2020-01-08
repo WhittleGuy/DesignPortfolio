@@ -4,7 +4,7 @@ import LineArt from "../../images/Graphics/LineArt.svg";
 class Contact extends Component {
   render() {
     return (
-      <div className="contact-container">
+      <div className="contact-container main-window">
         <div className="left">
           <div className="contact-text">
             <h1>Contact Me</h1>
@@ -44,12 +44,16 @@ class Contact extends Component {
               </label>
             </div>
             <div className="submit-button-field">
-              <input className="submit-btn" type="submit" value="Send"></input>
+              <input
+                className="submit-btn small-button"
+                type="submit"
+                value="Send"
+              ></input>
             </div>{" "}
           </form>
         </div>
         <div className="right">
-          <img className="LineArt" src={LineArt} alt="Lineart" />
+          <img className="LineArt half-graphic" src={LineArt} alt="Lineart" />
         </div>
       </div>
     );

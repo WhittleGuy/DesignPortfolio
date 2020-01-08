@@ -5,9 +5,9 @@ import Resume from "../../images/Whittle, Brandon - Resume.pdf";
 class Home extends Component {
   render() {
     return (
-      <div className="home-container">
-        <div className="greeting">
-          <h1 className="heading">
+      <div className="home-container main-window">
+        <div>
+          <h1>
             Hello!
             <br />
             I'm Brandon Whittle,
@@ -33,7 +33,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <img className="sines" src={Sines} alt="Sines" />
+        <img className="sines bottom-graphic" src={Sines} alt="Sines" />
       </div>
     );
   }
