@@ -3,6 +3,7 @@ $jet: #111111;
 $ebony: #181818;
 $deepViolet: #1b065e;
 $purplePizzazz: #ff47da;
+$twitterBlue: #1da1f2;
 
 $headingSize: 4em;
 $paraSize: 1em;
@@ -89,11 +90,30 @@ $emphFont: "Indie Flower", cursive;
     font-family: $paraFont;
 
     a {
-      font-family: $paraFont;
+      font-family: "helvetica", sans-serif;
       text-decoration: none;
       font-size: 1em;
-      color: #1da1f2;
+      color: $twitterBlue;
     }
+  }
+}
+
+@mixin twitter {
+  width: 100%;
+  .twitter {
+    width: 150px;
+    height: 40px;
+    background: $twitterBlue;
+    color: white;
+    font-family: "helvetica", sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: grid;
+    place-items: center center;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
   }
 }
 

@@ -19,6 +19,11 @@
 
   .right {
     @include card-panel-multi-section;
-    @include disclaimer;
+    .disclaimer {
+      @include disclaimer;
+    }
+    .twitter-container {
+      @include twitter;
+    }
   }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Project from "../components/project";
+import TwitterTag from "../components/twitter";
 
 import RMVLogo from "../../images/Projects/RMV/RMVLogo.png";
 import Graphremake from "../../images/Projects/RMV/graphremake.png";
@@ -54,6 +55,7 @@ class Projects extends Component {
           <div className="project-panels">
             <div className="project">
               <h1>Rank MI Vote</h1>
+              <TwitterTag user="rankmivote" />
               <div className="tiles">
                 <Project source={RMVLogo} />
                 <Project source={RMVPostcard} />
@@ -68,6 +70,8 @@ class Projects extends Component {
 
             <div className="project">
               <h1>SaltyxB1tch</h1>
+              <TwitterTag user="saltyxbish" />
+              div
               <div className="tiles">
                 <Project source={SaltySS} />
                 <Project source={SaltyBRB} />
@@ -97,6 +101,7 @@ class Projects extends Component {
 
             <div className="project">
               <h1>Personal</h1>
+              <TwitterTag user="whittleguyyy" />
               <div className="tiles">
                 <Project source={Crowder} />
                 <Project source={Moon} />
