@@ -80,7 +80,7 @@ class Projects extends Component {
                 <Project source={SaltyYT} />
                 <Project source={SaltyEndCard} />
               </div>
-              <p className="discalimer">
+              <p className="disclaimer">
                 DISCLAIMER: Drawings of Salty, Kermit, and Lily were created by
                 {"  "}
                 <a href="https://twitter.com/porkchop_xoxo">
