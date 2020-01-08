@@ -20,12 +20,43 @@
         @include para-css;
       }
     }
+
+    @include form-field(name, input);
+    @include form-field(email, input);
+    @include form-field(message, textarea);
+
+    .message,
+    .message textarea {
+      height: 300px;
+      resize: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1em;
+    }
+
+    input {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1em;
+    }
+
+    .content-message {
+      height: 50px;
+      top: 0.9em;
+    }
+
+    .submit-button-field {
+      width: 100%;
+      display: grid;
+      @include grid-center;
+      .submit-btn {
+        @include small-button-css;
+      }
+    }
   }
 
   .right {
     @include half-panel;
 
-    .penrose {
+    .LineArt {
       @include half-graphic;
     }
   }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Spirograph from "../../images/spirograph.svg";
+import Spirograph from "../../images/Graphics/spirograph.svg";
 
 class Skills extends Component {
   render() {

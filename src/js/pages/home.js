@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Sines from "../../images/Sines.svg";
+import Sines from "../../images/Graphics/Sines.svg";
+import Resume from "../../images/Whittle, Brandon - Resume.pdf";
 
 class Home extends Component {
   render() {
@@ -18,7 +19,13 @@ class Home extends Component {
           </p>
 
           <div className="external-links">
-            <a className="button" href="https://www.google.com">
+            <a
+              className="button"
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
               Resume
             </a>
             <a className="button" href="#/contact">

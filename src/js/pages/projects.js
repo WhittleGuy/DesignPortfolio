@@ -1,34 +1,34 @@
 import React, { Component } from "react";
 import Project from "../components/project";
 
-import RMVLogo from "../../images/Projects/100ppi/RMV/RMVLogo.png";
-import Graphremake from "../../images/Projects/100ppi/RMV/graphremake.png";
-import RMVFlyer from "../../images/Projects/100ppi/RMV/RMVFlyer.png";
-import RMVPostcard from "../../images/Projects/100ppi/RMV/RMVPostcard.png";
-import RMVwordmark from "../../images/Projects/100ppi/RMV/RMVwordmark.png";
-import Twitter1 from "../../images/Projects/100ppi/RMV/Twitter1.png";
-import Twitter2 from "../../images/Projects/100ppi/RMV/Twitter2.png";
-import Twitter3 from "../../images/Projects/100ppi/RMV/Twitter3.png";
+import RMVLogo from "../../images/Projects/RMV/RMVLogo.png";
+import Graphremake from "../../images/Projects/RMV/graphremake.png";
+import RMVFlyer from "../../images/Projects/RMV/RMVFlyer.png";
+import RMVPostcard from "../../images/Projects/RMV/RMVPostcard.png";
+import RMVwordmark from "../../images/Projects/RMV/RMVwordmark.png";
+import Twitter1 from "../../images/Projects/RMV/Twitter1.png";
+import Twitter2 from "../../images/Projects/RMV/Twitter2.png";
+import Twitter3 from "../../images/Projects/RMV/Twitter3.png";
 
-import SaltySS from "../../images/Projects/100ppi/Salty/saltyss.png";
-import SaltyBRB from "../../images/Projects/100ppi/Salty/saltybrb.png";
-import SaltyEndCard from "../../images/Projects/100ppi/Salty/saltyendcard.png";
-import SaltyHeader from "../../images/Projects/100ppi/Salty/saltyheader.png";
-import SaltyTFW from "../../images/Projects/100ppi/Salty/saltytfw.png";
-import SaltyYT from "../../images/Projects/100ppi/Salty/saltyyt.png";
+import SaltySS from "../../images/Projects/Salty/saltyss.png";
+import SaltyBRB from "../../images/Projects/Salty/saltybrb.png";
+import SaltyEndCard from "../../images/Projects/Salty/saltyendcard.png";
+import SaltyHeader from "../../images/Projects/Salty/saltyheader.png";
+import SaltyTFW from "../../images/Projects/Salty/saltytfw.png";
+import SaltyYT from "../../images/Projects/Salty/saltyyt.png";
 
-import Anbu from "../../images/Projects/100ppi/Misc Twitch/Anbu.png";
-import Nuck from "../../images/Projects/100ppi/Misc Twitch/Nuck_Logo_New.png";
-import Cam from "../../images/Projects/100ppi/Misc Twitch/twitch.png";
+import Anbu from "../../images/Projects/Misc Twitch/Anbu.png";
+import Nuck from "../../images/Projects/Misc Twitch/Nuck_Logo_New.png";
+import Cam from "../../images/Projects/Misc Twitch/twitch.png";
 
-import Crowder from "../../images/Projects/100ppi/Personal/crowder.png";
-import Eye from "../../images/Projects/100ppi/Personal/eye.png";
-import Moon from "../../images/Projects/100ppi/Personal/Moon.png";
-import Record from "../../images/Projects/100ppi/Personal/Record.png";
+import Crowder from "../../images/Projects/Personal/crowder.png";
+import Eye from "../../images/Projects/Personal/eye.png";
+import Moon from "../../images/Projects/Personal/Moon.png";
+import Record from "../../images/Projects/Personal/Record.png";
 
-import Spirograph from "../../images/spirograph.svg";
+import Spirograph from "../../images/Graphics/spirograph.svg";
 import Logo from "../../images/BW_Logo.svg";
-import Penrose from "../../images/Penrose.svg";
+import Penrose from "../../images/Graphics/Penrose.svg";
 
 class Projects extends Component {
   render() {
