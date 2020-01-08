@@ -19,5 +19,6 @@
 
   .right {
     @include card-panel-multi-section;
+    @include disclaimer;
   }
 }

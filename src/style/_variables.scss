@@ -80,6 +80,23 @@ $emphFont: "Indie Flower", cursive;
   }
 }
 
+@mixin disclaimer {
+  p {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: $paraFont;
+
+    a {
+      font-family: $paraFont;
+      text-decoration: none;
+      font-size: 1em;
+      color: #1da1f2;
+    }
+  }
+}
+
 @mixin main-window {
   width: calc(100%-45px);
   height: 100vh;
