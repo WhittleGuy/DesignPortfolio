@@ -42,13 +42,12 @@
             max-height: 250px;
             margin: 10px 10px;
             padding: 0px 5px;
-            background: $secondary;
+            background: transparent;
             align-self: center;
             justify-self: center;
 
             img {
               width: 100%;
-              display: block;
               display: block;
             }
           }
