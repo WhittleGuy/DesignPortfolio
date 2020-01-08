@@ -71,7 +71,7 @@ class Projects extends Component {
             <div className="project">
               <h1>SaltyxB1tch</h1>
               <TwitterTag user="saltyxbish" />
-              div
+
               <div className="tiles">
                 <Project source={SaltySS} />
                 <Project source={SaltyBRB} />
