@@ -81,7 +81,7 @@ class Projects extends Component {
                 SaltyEndCard,
                 SaltyHeader,
                 SaltyTFW,
-                SaltyYT
+                SaltyYT,
                 SaltyLogo
               ]}
               disclaimer="Depictions of Salty, Lily, and Kermit were created by @porkchop_xoxo."
