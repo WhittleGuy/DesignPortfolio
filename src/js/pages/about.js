@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Timeline from "../../images/Graphics/Timeline.svg";
+import Timeline from "../../images/Graphics/Timeline.png";
 import Penrose from "../../images/Graphics/Penrose.svg";
 
 class About extends Component {
