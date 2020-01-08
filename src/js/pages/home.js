@@ -24,7 +24,6 @@ class Home extends Component {
               href={Resume}
               target="_blank"
               rel="noopener noreferrer"
-              download
             >
               Resume
             </a>
