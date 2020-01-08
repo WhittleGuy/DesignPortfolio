@@ -120,7 +120,6 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
-  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -140,6 +139,13 @@ nav .outside-links a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-auto-flow: rows;
+    min-height: 150vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    height: 100vh;
   }
 }
 
@@ -207,6 +213,13 @@ nav .outside-links a {
           box-shadow: 6px 6px 4px #111111;
 }
 
+@media screen and (max-width: 1000px) {
+  .home-container .button {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .home-container .button:hover {
   color: #181818;
   background: #ffcfe2;
@@ -215,6 +228,13 @@ nav .outside-links a {
           box-shadow: 0 0 10px #ffcfe2;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container .button:hover {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 
 .sines {
@@ -230,7 +250,6 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
-  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -242,6 +261,7 @@ nav .outside-links a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-auto-flow: rows;
+    min-height: 150vh;
   }
 }
 
@@ -318,7 +338,6 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
-  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -330,6 +349,7 @@ nav .outside-links a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-auto-flow: rows;
+    min-height: 150vh;
   }
 }
 
@@ -438,7 +458,6 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
-  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -450,6 +469,7 @@ nav .outside-links a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-auto-flow: rows;
+    min-height: 150vh;
   }
 }
 
@@ -590,7 +610,6 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
-  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -602,6 +621,7 @@ nav .outside-links a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-auto-flow: rows;
+    min-height: 150vh;
   }
 }
 

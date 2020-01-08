@@ -86,13 +86,13 @@ $emphFont: "Indie Flower", cursive;
   margin-left: 45px;
   padding: 0px 25px;
   background: $secondary;
-  background-position: fixed;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
     grid-auto-flow: rows;
+    min-height: 150vh;
   }
 }
 
@@ -138,12 +138,20 @@ $emphFont: "Indie Flower", cursive;
   transition: 0.2s;
   box-shadow: 6px 6px 4px $primary;
 
+  @media screen and (max-width: 1000px) {
+    transform: scale(0.8);
+  }
+
   &:hover {
     color: $secondary;
     background: $tertiary;
     border: $tertiary solid;
     box-shadow: 0 0 10px $tertiary;
     transform: scale(1.1);
+
+    @media screen and (max-width: 1000px) {
+      transform: scale(0.9);
+    }
   }
 }
 

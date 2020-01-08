@@ -3,6 +3,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: 70% 30%;
   @include grid-center;
+  @media screen and (max-width: 1000px) {
+    height: 100vh;
+  }
 
   .heading {
     @include header-css;
