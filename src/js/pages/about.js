@@ -27,6 +27,16 @@ class About extends Component {
         </div>
         <div className="right">
           <img className="penrose" src={Penrose} alt="Penrose" />
+          <a
+            className="twitter-timeline"
+            data-width="800"
+            data-height="500"
+            data-theme="dark"
+            href="https://twitter.com/WhittleGuyyy?ref_src=twsrc%5Etfw"
+          >
+            Tweets by WhittleGuyyy
+          </a>{" "}
+          async src="https://platform.twitter.com/widgets.js" charset="utf-8"
         </div>
       </div>
     );
