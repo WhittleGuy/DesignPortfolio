@@ -120,6 +120,7 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
+  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -132,6 +133,14 @@ nav .outside-links a {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+  }
 }
 
 .home-container .heading {
@@ -221,10 +230,19 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
+  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+  }
 }
 
 .about-container .left {
@@ -296,10 +314,19 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
+  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .skills-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+  }
 }
 
 .skills-container .left {
@@ -401,10 +428,19 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
+  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+  }
 }
 
 .projects-container .left {
@@ -456,6 +492,13 @@ nav .outside-links a {
   position: absolute;
   right: 0;
   width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-container .right {
+    left: 45px;
+    width: 100%;
+  }
 }
 
 .projects-container .right .project-panels {
@@ -532,10 +575,19 @@ nav .outside-links a {
   margin-left: 45px;
   padding: 0px 25px;
   background: #181818;
+  background-position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+  }
 }
 
 .contact-container .left {
