@@ -18,6 +18,7 @@ import SaltyEndCard from "../../images/Projects/Salty/saltyendcard.png";
 import SaltyHeader from "../../images/Projects/Salty/saltyheader.png";
 import SaltyTFW from "../../images/Projects/Salty/saltytfw.png";
 import SaltyYT from "../../images/Projects/Salty/saltyyt.png";
+import SaltyLogo from "../../images/Projects/Salty/SaltyLogo.png";
 
 //! MISC TWITCH ASSETS
 import Anbu from "../../images/Projects/Misc Twitch/Anbu.png";
@@ -81,6 +82,7 @@ class Projects extends Component {
                 SaltyHeader,
                 SaltyTFW,
                 SaltyYT
+                SaltyLogo
               ]}
               disclaimer="Depictions of Salty, Lily, and Kermit were created by @porkchop_xoxo."
             />
