@@ -82,19 +82,17 @@ $emphFont: "Indie Flower", cursive;
 }
 
 @mixin disclaimer {
-  p {
-    width: 100%;
-    text-align: center;
-    font-size: 1em;
-    color: white;
-    font-family: $paraFont;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  font-family: $paraFont;
 
-    a {
-      font-family: "helvetica", sans-serif;
-      text-decoration: none;
-      font-size: 1em;
-      color: $twitterBlue;
-    }
+  a {
+    font-family: "helvetica", sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    color: $twitterBlue;
   }
 }
 
