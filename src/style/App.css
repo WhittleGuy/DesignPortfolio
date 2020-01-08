@@ -250,6 +250,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 .about-container .left .about-text {
@@ -297,6 +299,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 .about-container .right .penrose {
@@ -334,6 +338,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 .skills-container .left .skills-text h1 {
@@ -364,7 +370,7 @@ nav .outside-links a {
 
 @media screen and (max-width: 900px) {
   .skills-container .left .skills-text h3 {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
@@ -411,6 +417,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 .skills-container .right img {
@@ -420,6 +428,8 @@ nav .outside-links a {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  background: #181818;
+  background-size: cover;
 }
 
 .projects-container {
@@ -448,6 +458,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 .projects-container .left .project-text {
@@ -487,6 +499,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
@@ -496,8 +510,9 @@ nav .outside-links a {
 
 @media screen and (max-width: 1000px) {
   .projects-container .right {
-    left: 45px;
-    width: 100%;
+    left: calc(20%+45px);
+    width: 90%;
+    top: 30vh;
   }
 }
 
@@ -527,7 +542,7 @@ nav .outside-links a {
 
 @media screen and (max-width: 900px) {
   .projects-container .right .project-panels .project h1 {
-    font-size: 2em;
+    font-size: 1em;
   }
 }
 
@@ -595,6 +610,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1000px) {
@@ -929,6 +946,8 @@ nav .outside-links a {
   width: 100%;
   display: -ms-grid;
   display: grid;
+  background: #181818;
+  background-size: cover;
 }
 
 .contact-container .right .LineArt {
@@ -938,5 +957,7 @@ nav .outside-links a {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  background: #181818;
+  background-size: cover;
 }
 /*# sourceMappingURL=App.css.map */
