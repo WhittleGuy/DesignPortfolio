@@ -1,24 +1,10 @@
 .skills-container {
-  width: calc(100%-45px);
-  margin-left: 45px;
-  background: $secondary;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include main-window;
 
   .left {
-    max-height: 100vh;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    width: 95%;
-
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-      margin-right: 45px;
-    }
+    @include half-panel;
 
     .skills-text {
-      padding: 0 0 0 25px;
       h1 {
         @include header-css;
       }
@@ -28,19 +14,7 @@
       }
 
       ul {
-        width: 100%;
-        list-style: none;
-        display: grid;
-        grid-template:
-          "1fr 1fr 1fr"
-          "1fr 1fr 1fr"
-          "1fr 1fr 1fr";
-        align-items: center;
-        justify-items: left;
-
-        li {
-          @include para-css;
-        }
+        @include ul-css;
       }
 
       p {
@@ -50,13 +24,10 @@
   }
 
   .right {
-    display: grid;
-    height: 100vh;
+    @include half-panel;
 
     img {
-      width: 90%;
-      align-self: center;
-      justify-self: center;
+      @include half-graphic;
     }
   }
 }

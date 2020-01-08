@@ -1,16 +1,8 @@
 .contact-container {
-  width: calc(100%-45px);
-  margin-left: 45px;
-  background: $secondary;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include main-window;
 
   .left {
-    height: 100vh;
-    width: 95%;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
+    @include half-panel;
 
     @media screen and (max-width: 1000px) {
       width: 100%;
@@ -31,14 +23,10 @@
   }
 
   .right {
-    height: 100vh;
-    width: 100%;
-    display: grid;
+    @include half-panel;
 
     .penrose {
-      width: 90%;
-      align-self: center;
-      justify-self: center;
+      @include half-graphic;
     }
   }
 }

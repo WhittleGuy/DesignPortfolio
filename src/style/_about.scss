@@ -1,24 +1,12 @@
 .about-container {
-  width: calc(100%-45px);
-  margin-left: 45px;
-  background: $secondary;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include main-window;
 
   .left {
-    height: 100vh;
-    width: 95%;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-    }
+    @include half-panel;
 
     .about-text {
       width: 100%;
-      padding: 0 0 0 25px;
+
       h1 {
         @include header-css;
       }
@@ -30,15 +18,13 @@
 
     .timeline {
       width: 100%;
-      margin: 25px 0;
       align-self: end;
-      padding: 0 25px;
+      padding-bottom: 20px;
     }
   }
   .right {
-    height: 100vh;
-    width: 100%;
-    display: grid;
+    @include half-panel;
+
     .penrose {
       width: 90%;
       align-self: center;

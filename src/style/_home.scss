@@ -1,13 +1,8 @@
 .home-container {
-  width: calc(100%-45px);
-  margin-left: 45px;
-  background: $secondary;
-  height: 100vh;
-  display: grid;
+  @include main-window;
   grid-template-columns: 1fr;
   grid-template-rows: 70% 30%;
-  align-items: center;
-  justify-items: center;
+  @include grid-center;
 
   .heading {
     @include header-css;
@@ -19,46 +14,21 @@
   }
 
   .external-links {
-    position: absolute;
-    bottom: 25%;
-    left: 50%;
-
-    @media screen and (max-width: 1000px) {
-      bottom: 25%;
-      left: 60%;
-    }
-
-    .button {
-      display: inline-block;
-      width: 130px;
-      height: 50px;
-      padding: 10px;
-      margin: 10px 10px 10px 10px;
-      color: $tertiary;
-      text-align: center;
-      background: $primary;
-      text-decoration: underline;
-      border-radius: 25px;
-      border-style: solid;
-      text-transform: uppercase;
-      font-family: "Oswald";
-      transition: 0.2s;
-      transform: translateX(-75%);
-      box-shadow: 6px 6px 4px $primary;
-
-      &:hover {
-        color: $secondary;
-        background-color: $tertiary;
-        border: $tertiary solid;
-        box-shadow: 0 0 10px $tertiary;
-        transform: scale(1.1) translateX(-67.5%);
-      }
-    }
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transform: translateX(25%);
+    @include grid-center;
   }
 
-  .sines {
-    width: calc(100vw - 45px);
-    position: absolute;
-    top: 80vh;
+  .button {
+    @include button-css;
   }
+}
+
+.sines {
+  width: calc(100vw - 45px);
+  position: absolute;
+  bottom: 15px;
+  left: 45px;
 }
