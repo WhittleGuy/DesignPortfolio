@@ -510,7 +510,7 @@ nav .outside-links a {
 
 @media screen and (max-width: 1000px) {
   .projects-container .right {
-    left: calc(20%+45px);
+    left: calc(45px);
     width: 90%;
     top: 30vh;
   }
