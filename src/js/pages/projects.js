@@ -11,6 +11,11 @@ import Twitter1 from "../../images/Projects/RMV/Twitter1.png";
 import Twitter2 from "../../images/Projects/RMV/Twitter2.png";
 import Twitter3 from "../../images/Projects/RMV/Twitter3.png";
 
+//! ITMS ASSETS
+import Home from "../../images/Projects/ITMS/home.JPG";
+import Staff from "../../images/Projects/ITMS/staff.JPG";
+import Rooms from "../../images/Projects/ITMS/rooms.JPG";
+
 //! SALTY ASSETS
 import SaltySS from "../../images/Projects/Salty/saltyss.png";
 import SaltyBRB from "../../images/Projects/Salty/saltybrb.png";
@@ -72,6 +77,13 @@ class Projects extends Component {
             />
 
             <Client
+              client="ITMS"
+              user=""
+              exhibits={[Home, Staff, Rooms]}
+              disclaimer=""
+            />
+
+            <Client
               client="SaltyxB1tch"
               user="SaltyxBish"
               exhibits={[
@@ -82,7 +94,7 @@ class Projects extends Component {
                 SaltyTFW,
                 SaltyYT
               ]}
-              disclaimer="Depictions of Salty, Lily, and Kermit were created by @porkchop_xoxo."
+              disclaimer="DISCLAIMER: Depictions of Salty, Lily, and Kermit were created by @porkchop_xoxo."
             />
             <Client
               client="Miscellaneous Twitch"
