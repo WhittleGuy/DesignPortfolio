@@ -60,7 +60,7 @@ function Star(x, y, size, velocity) {
   this.y = y;
   this.size = size;
   this.velocity = velocity;
-  const colors = ["#fb83fa", "#31bcb8", "#ffffff"];
+  const colors = ["#fb83fa", "#31bcb8", "#ffffff", "#f6f740"];
 
   this.color = colors[Math.floor(Math.random() * colors.length)];
 }
