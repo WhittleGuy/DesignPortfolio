@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0419a2af.chunk.css",
-    "main.js": "/static/js/main.2ca76a1e.chunk.js",
-    "main.js.map": "/static/js/main.2ca76a1e.chunk.js.map",
+    "main.css": "/static/css/main.cd28c108.chunk.css",
+    "main.js": "/static/js/main.d60fc192.chunk.js",
+    "main.js.map": "/static/js/main.d60fc192.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ca2d27e8.js",
     "runtime-main.js.map": "/static/js/runtime-main.ca2d27e8.js.map",
-    "static/js/2.88ef415f.chunk.js": "/static/js/2.88ef415f.chunk.js",
-    "static/js/2.88ef415f.chunk.js.map": "/static/js/2.88ef415f.chunk.js.map",
+    "static/js/2.6953dbfb.chunk.js": "/static/js/2.6953dbfb.chunk.js",
+    "static/js/2.6953dbfb.chunk.js.map": "/static/js/2.6953dbfb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a57cd5f429be650da32768b3f3394188.js": "/precache-manifest.a57cd5f429be650da32768b3f3394188.js",
+    "precache-manifest.1940a938abf57a0e335f2ad23e7451d4.js": "/precache-manifest.1940a938abf57a0e335f2ad23e7451d4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0419a2af.chunk.css.map": "/static/css/main.0419a2af.chunk.css.map",
-    "static/js/2.88ef415f.chunk.js.LICENSE": "/static/js/2.88ef415f.chunk.js.LICENSE",
+    "static/css/main.cd28c108.chunk.css.map": "/static/css/main.cd28c108.chunk.css.map",
+    "static/js/2.6953dbfb.chunk.js.LICENSE": "/static/js/2.6953dbfb.chunk.js.LICENSE",
     "static/media/Anbu.png": "/static/media/Anbu.3a44fa59.png",
     "static/media/BW_Logo.svg": "/static/media/BW_Logo.4f2eb22e.svg",
     "static/media/LineArt.svg": "/static/media/LineArt.f04c1df3.svg",
@@ -30,6 +30,8 @@
     "static/media/crowder.png": "/static/media/crowder.104a84f6.png",
     "static/media/eye.png": "/static/media/eye.e556a00f.png",
     "static/media/graphremake.png": "/static/media/graphremake.ef50409a.png",
+    "static/media/home.JPG": "/static/media/home.166473aa.JPG",
+    "static/media/rooms.JPG": "/static/media/rooms.5efb3c9d.JPG",
     "static/media/saltybrb.png": "/static/media/saltybrb.da7157cc.png",
     "static/media/saltyendcard.png": "/static/media/saltyendcard.ed064c02.png",
     "static/media/saltyheader.png": "/static/media/saltyheader.67f3b415.png",
@@ -37,12 +39,13 @@
     "static/media/saltytfw.png": "/static/media/saltytfw.7d3c987e.png",
     "static/media/saltyyt.png": "/static/media/saltyyt.87589248.png",
     "static/media/spirograph.svg": "/static/media/spirograph.437b3108.svg",
+    "static/media/staff.JPG": "/static/media/staff.b457d881.JPG",
     "static/media/twitch.png": "/static/media/twitch.56b6f251.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ca2d27e8.js",
-    "static/js/2.88ef415f.chunk.js",
-    "static/css/main.0419a2af.chunk.css",
-    "static/js/main.2ca76a1e.chunk.js"
+    "static/js/2.6953dbfb.chunk.js",
+    "static/css/main.cd28c108.chunk.css",
+    "static/js/main.d60fc192.chunk.js"
   ]
 }
