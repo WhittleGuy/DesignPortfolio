@@ -42,7 +42,7 @@ Starfield.prototype.start = function() {
     stars[i] = new Star(
       Math.random() * this.width,
       Math.random() * this.height,
-      Math.random() * 3 + 1,
+      Math.random() * 2 + 1,
       Math.random() * (this.maxVelocity - this.minVelocity) + this.minVelocity
     );
   }
@@ -60,9 +60,8 @@ function Star(x, y, size, velocity) {
   this.y = y;
   this.size = size;
   this.velocity = velocity;
-  const colors = ["#ffffff" /*"#fb83fa", "#31bcb8", "#f6f740"*/];
-
-  this.color = colors[Math.floor(Math.random() * colors.length)];
+  const color_list = ["#ffffff" /*, "#fb83fa", "#31bcb8", "#f6f740"*/];
+  this.color = color_list[Math.floor(Math.random() * color_list.length)];
 }
 
 Starfield.prototype.update = function() {
@@ -75,7 +74,7 @@ Starfield.prototype.update = function() {
       this.stars[i] = new Star(
         Math.random() * this.width,
         0,
-        Math.random() * 3 + 1,
+        Math.random() * 2 + 1,
         Math.random() * (this.maxVelocity - this.minVelocity) + this.minVelocity
       );
     }
