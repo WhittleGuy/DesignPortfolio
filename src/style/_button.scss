@@ -55,6 +55,7 @@
   letter-spacing: 2px;
   font-weight: 400;
   pointer-events: all;
+  text-align: center;
 
   @include button-additional;
   @include button-ghost-grad(155deg, #fb83fa, #31bcb8);

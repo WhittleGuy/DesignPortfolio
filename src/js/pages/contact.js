@@ -45,11 +45,11 @@ class Contact extends Component {
             </div>
             <div className="submit-button-field">
               <input
-                className="submit-btn button__small"
+                className="button__small"
                 type="submit"
-                value="Send"
+                value="Send "
               ></input>
-            </div>{" "}
+            </div>
           </form>
         </div>
         <div className="right">

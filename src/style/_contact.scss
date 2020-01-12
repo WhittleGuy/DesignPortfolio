@@ -33,9 +33,8 @@
   }
 
   .submit-button-field {
-    width: 100%;
-    display: grid;
-    @include grid-center;
-    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
