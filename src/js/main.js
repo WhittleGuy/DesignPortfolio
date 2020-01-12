@@ -12,7 +12,7 @@ const Main = () => (
     <Route exact path="/">
       <Redirect to="./home" />
     </Route>
-    <Route path="/home" component={Home} />
+    <Route exact path="/home" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/skills" component={Skills} />
     <Route path="/projects" component={Projects} />
