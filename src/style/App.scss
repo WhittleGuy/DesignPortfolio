@@ -4,10 +4,10 @@
 //! MASTER WINDOW STYLING
 
 .main-window {
-  width: calc(100%-45px);
+  width: calc(100% - 3rem);
   height: 100vh;
   margin-left: 3rem;
-  padding: 0px 25px;
+  padding: 0 1.5rem;
   background: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,20 +20,22 @@
 }
 
 canvas {
-  overflow: none;
-  width: calc(100% - 1rem);
-  min-height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 3rem);
+  height: 100vh;
 }
 
 #root {
   background: black;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .App {
   position: fixed;
   top: 0;
-  left: 0px;
+  left: 0;
   z-index: 1;
   height: 100vh;
   width: 100%;
@@ -56,10 +58,10 @@ canvas {
 }
 
 .bottom-graphic {
-  width: calc(100vw - 45px);
+  width: calc(100% - 3rem);
   position: absolute;
-  bottom: 15px;
-  left: 45px;
+  bottom: 1rem;
+  left: 3rem;
 }
 
 //! MASTER COMPONENT STYLING
@@ -78,7 +80,7 @@ canvas {
 //! MASTER TEXT STYLING
 
 h1 {
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
   @include headerSpec;
   font-size: $headSize;
 
@@ -110,16 +112,12 @@ p {
 
 ul {
   width: 100%;
-  margin: 0 0 20px 0;
   font-family: $paraFont;
   font-size: $paraSize;
   color: white;
   list-style: none;
   display: grid;
-  grid-template:
-    "1fr 1fr 1fr"
-    "1fr 1fr 1fr"
-    "1fr 1fr 1fr";
+  grid-template: "1fr 1fr 1fr";
   align-items: center;
   justify-items: left;
 
@@ -128,7 +126,7 @@ ul {
   }
 
   li {
-    margin: 5px 0;
+    margin: 0.25rem 0;
     font-family: $paraFont;
     font-size: $paraSize;
     color: white;

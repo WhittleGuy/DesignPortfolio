@@ -105,7 +105,7 @@ class Projects extends Component {
             <Client
               client="Personal"
               user="WhittleGuyyy"
-              exhibits={[Crowder, Moon, Eye, Record, Logo, Spirograph, Penrose]}
+              exhibits={[Crowder, Moon, Eye, Penrose, Logo, Spirograph, Record]}
               disclaimer=""
             />
           </div>

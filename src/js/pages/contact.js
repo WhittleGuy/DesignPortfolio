@@ -38,7 +38,7 @@ class Contact extends Component {
               </label>
             </div>
             <div className="message">
-              <textarea name="message" required></textarea>
+              <textarea type="text" name="message" required></textarea>
               <label htmlFor="message" className="label-message">
                 <span className="content-message">Message</span>
               </label>

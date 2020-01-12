@@ -75,27 +75,27 @@ $emphFont: "Indie Flower", cursive;
   .#{$field} {
     width: 95%;
     position: relative;
-    height: 50px;
-    background: $tertiary;
+    height: 3.25rem;
+    background: $primary;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     margin-left: 2.5%;
   }
 
   .#{$field} #{$type} {
     width: 100%;
     height: 100%;
-    color: $tertiary;
-    padding-top: 20px;
+    color: white;
+    padding-top: 1.25rem;
     border: none;
     outline: none;
-    background: linear-gradient(to top, $primary, $secondary);
+    background: linear-gradient(to top, $primary, $primary);
   }
 
   .#{$field} label {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
@@ -104,11 +104,19 @@ $emphFont: "Indie Flower", cursive;
   .#{$field} label::after {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -1px;
     height: 100%;
     width: 100%;
-    border-bottom: 3px solid $tertiary;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      black 0%,
+      #44ccff 25%,
+      #ff47da 75%,
+      black 100%
+    );
+    border-image-slice: 1;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
@@ -123,20 +131,31 @@ $emphFont: "Indie Flower", cursive;
     }
 
     position: absolute;
-    bottom: 5px;
-    left: 0px;
+    top: 1.2rem;
+    left: 0;
     transition: all 0.3s ease;
   }
 
   .#{$field} #{$type}:focus + .label-#{$field} .content-#{$field},
   .#{$field} #{$type}:valid + .label-#{$field} .content-#{$field} {
-    transform: translateY(-1.2em);
-    font-size: 1em;
-    color: $tertiary;
+    transform: translateY(-1.2rem);
+    font-size: 0.7rem;
+    color: white;
+  }
+
+  .#{$field} #{$type}:focus + .label-#{$field} .content-#{$field},
+  .#{$field} #{$type}:valid + .label-#{$field} .content-#{$field} {
+    transform: translateY(-1.2rem);
+    font-size: 0.7rem;
+    color: white;
   }
 
   .#{$field} #{$type}:focus + .label-#{$field}::after,
   .#{$field} #{$type}:valid + .label-#{$field}::after {
     transform: translateX(0%);
+  }
+
+  .#{$field} #{$type}:invalid + .label-#{$field} {
+    border-left: 1px solid red;
   }
 }

@@ -35,24 +35,26 @@
           flex-wrap: wrap;
           align-items: center;
           justify-content: center;
-          margin: 20px 0 10px 0;
+          margin: 0.5rem 0;
 
           .card {
-            width: calc(calc(100% - 3rem) / 3);
+            width: 16rem;
+            max-height: 16rem;
             margin: 0.5rem 0.5rem;
             background: transparent;
             align-self: center;
             justify-self: center;
 
             img {
-              width: 100%;
+              max-height: 100%;
+              max-width: 100%;
               display: block;
             }
           }
         }
 
         .client-disclaimer {
-          margin: 0 0 50px 0;
+          margin: 0 0 0.5rem 0;
         }
       }
     }
