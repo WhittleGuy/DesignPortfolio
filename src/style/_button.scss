@@ -8,11 +8,23 @@
   transition: all 0.5s ease;
   outline: none;
 
+  @media screen and (max-width: 1000px) {
+    border: 1px solid #fb83fa;
+    color: #fb83fa;
+    transition: all 0.5s ease;
+    outline: none;
+  }
+
   &:hover {
     background: linear-gradient(155deg, #fb83fa 0%, #31bcb8 100%);
     transition: all 0.5s ease;
     color: #111111;
     text-decoration: none;
+
+    @media screen and (max-width: 1000px) {
+      outline: none;
+      background: #fb83fa;
+    }
   }
 }
 

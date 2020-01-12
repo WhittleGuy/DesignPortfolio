@@ -7,7 +7,7 @@ function Starfield() {
   this.height = 0;
   this.minVelocity = 15;
   this.maxVelocity = 50;
-  this.stars = 150;
+  this.stars = 300;
   this.intervalid = 0;
 }
 

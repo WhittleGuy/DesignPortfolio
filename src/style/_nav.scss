@@ -15,7 +15,9 @@ nav {
   align-items: center;
   justify-items: center;
   position: fixed;
-  z-index: 5;
+  top: 0;
+  left: 0;
+  z-index: 2;
 
   border-right: 1px solid transparent;
   border-image: linear-gradient(
@@ -80,6 +82,10 @@ nav {
         color: transparent;
         background-image: linear-gradient(155deg, #ff47da, #44ccff);
         background-clip: text;
+
+        @media screen and (max-width: 1000px) {
+          color: #ff47da;
+        }
       }
     }
 
@@ -87,6 +93,11 @@ nav {
       color: transparent;
       background-image: linear-gradient(155deg, #ff47da, #44ccff);
       background-clip: text;
+
+      @media screen and (max-width: 1000px) {
+        color: #ff47da;
+      }
+
       &::after {
         content: "";
         display: block;

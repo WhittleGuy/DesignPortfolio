@@ -14,7 +14,9 @@ nav {
           align-items: center;
   justify-items: center;
   position: fixed;
-  z-index: 5;
+  top: 0;
+  left: 0;
+  z-index: 2;
   border-right: 1px solid transparent;
   -o-border-image: linear-gradient(to top, black 0%, #44ccff 25%, #ff47da 75%, black 100%);
      border-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(25%, #44ccff), color-stop(75%, #ff47da), to(black));
@@ -88,10 +90,26 @@ nav .nav-links .contact:hover {
   background-clip: text;
 }
 
+@media screen and (max-width: 1000px) {
+  nav .nav-links .home:hover,
+  nav .nav-links .about:hover,
+  nav .nav-links .skills:hover,
+  nav .nav-links .projects:hover,
+  nav .nav-links .contact:hover {
+    color: #ff47da;
+  }
+}
+
 nav .nav-links .active {
   color: transparent;
   background-image: linear-gradient(155deg, #ff47da, #44ccff);
   background-clip: text;
+}
+
+@media screen and (max-width: 1000px) {
+  nav .nav-links .active {
+    color: #ff47da;
+  }
 }
 
 nav .nav-links .active::after {
@@ -141,11 +159,12 @@ nav .outside-links a {
 }
 
 canvas {
-  position: absolute;
+  overflow: none;
+  position: fixed;
   right: 0;
   top: 0;
   width: calc(100% - 3rem);
-  height: 100vh;
+  height: 200vh;
 }
 
 #root {
@@ -154,7 +173,7 @@ canvas {
 }
 
 .App {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -771,12 +790,29 @@ ul li {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .button {
+    border: 1px solid #fb83fa;
+    color: #fb83fa;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: none;
+  }
+}
+
 .button:hover {
   background: linear-gradient(155deg, #fb83fa 0%, #31bcb8 100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #111111;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .button:hover {
+    outline: none;
+    background: #fb83fa;
+  }
 }
 
 .button__small {
@@ -812,12 +848,29 @@ ul li {
   outline: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .button__small {
+    border: 1px solid #fb83fa;
+    color: #fb83fa;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: none;
+  }
+}
+
 .button__small:hover {
   background: linear-gradient(155deg, #fb83fa 0%, #31bcb8 100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #111111;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .button__small:hover {
+    outline: none;
+    background: #fb83fa;
+  }
 }
 
 .button__close {
@@ -852,12 +905,29 @@ ul li {
   outline: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .button__close {
+    border: 1px solid #fb83fa;
+    color: #fb83fa;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: none;
+  }
+}
+
 .button__close:hover {
   background: linear-gradient(155deg, #fb83fa 0%, #31bcb8 100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #111111;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .button__close:hover {
+    outline: none;
+    background: #fb83fa;
+  }
 }
 
 .button__twitter {
@@ -885,11 +955,28 @@ ul li {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .button__twitter {
+    border: 1px solid #fb83fa;
+    color: #fb83fa;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    outline: none;
+  }
+}
+
 .button__twitter:hover {
   background: linear-gradient(155deg, #fb83fa 0%, #31bcb8 100%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: #111111;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .button__twitter:hover {
+    outline: none;
+    background: #fb83fa;
+  }
 }
 /*# sourceMappingURL=App.css.map */
