@@ -8,7 +8,7 @@
   height: 100vh;
   margin-left: 45px;
   padding: 0px 25px;
-  background: $secondary;
+  background: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -17,6 +17,19 @@
     grid-auto-flow: rows;
     min-height: 150vh;
   }
+}
+
+#root {
+  background: black;
+}
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
 }
 
 .left,
