@@ -45,7 +45,7 @@ class Contact extends Component {
             </div>
             <div className="submit-button-field">
               <input
-                className="submit-btn small-button"
+                className="submit-btn button__small"
                 type="submit"
                 value="Send"
               ></input>

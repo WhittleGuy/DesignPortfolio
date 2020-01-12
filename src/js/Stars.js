@@ -31,8 +31,8 @@ Starfield.prototype.initialise = function(div) {
   var canvas = document.createElement("canvas");
   div.appendChild(canvas);
   this.canvas = canvas;
-  this.canvas.width = this.width - 4;
-  this.canvas.height = this.height - 4;
+  this.canvas.width = this.width;
+  this.canvas.height = this.height;
 };
 
 Starfield.prototype.start = function() {
@@ -60,7 +60,7 @@ function Star(x, y, size, velocity) {
   this.y = y;
   this.size = size;
   this.velocity = velocity;
-  const colors = ["#fb83fa", "#31bcb8", "#ffffff", "#f6f740"];
+  const colors = ["#ffffff" /*"#fb83fa", "#31bcb8", "#f6f740"*/];
 
   this.color = colors[Math.floor(Math.random() * colors.length)];
 }

@@ -31,19 +31,32 @@ class Skills extends Component {
                 <i className="fab fa-adobe" /> Adobe Photoshop
               </li>
               <li>
-                <i className="fab fa-react" /> React
-              </li>
-              <li>
                 <i className="fab fa-html5" /> HTML5
               </li>
               <li>
                 <i className="fab fa-sass" /> CSS3 / SASS
               </li>
               <li>
+                <i className="fab fa-js" /> Javascript
+              </li>
+              <li>
+                <i className="fab fa-react" /> React
+              </li>
+              <li>
+                <i className="fa fa-code" /> C++
+              </li>
+              <li>
+                <i className="fab fa-python" /> Python
+              </li>
+              <li>
+                <i className="fab fa-git-alt" /> git
+              </li>
+
+              <li>
                 <i className="fab fa-google" /> Google Docs / Drive
               </li>
               <li>
-                <i className="fa fa-headphones-alt" /> Analog Audio Mixing
+                <i className="fa fa-compact-disc" /> Analog Audio Mixing
               </li>
             </ul>
             <h3>Soft Skills</h3>

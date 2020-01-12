@@ -8,7 +8,9 @@
   }
 
   .subtitle {
+    @include emph-css;
     transform: translateX(15%);
+    margin: 0 0 1rem 0;
   }
 
   .external-links {

@@ -25,10 +25,11 @@ $primary: $licorice;
 $secondary: $eerieBlack;
 $tertiary: $classicRose;
 
-$headSize: 4em;
-$subHeadSize: 2em;
-$paraSize: 1em;
-$emphSize: 1.2em;
+$headSize: 4rem;
+$head2Size: 3rem;
+$Head3Size: 2rem;
+$paraSize: 1rem;
+$emphSize: 1.2rem;
 
 $headCol: $purplePizzazz;
 $subHeadCol: $purplePizzazz;
@@ -43,20 +44,20 @@ $emphFont: "Indie Flower", cursive;
 
 @mixin headerSpec {
   transform: skew(15deg);
-  text-shadow: -2px 2px $purplePizzazz, -4px 4px black;
+  text-shadow: -2px 2px $purplePizzazz, 2px -2px $pictonBlue;
   font-family: $headFont;
-  color: $tertiary;
+  color: black;
 }
 
 //! SPECIAL TEXT MIXINS
 
 @mixin emph-css {
   font-family: $emphFont;
-  font-size: $emphFont;
+  font-size: $emphSize;
   color: white;
 
   @media screen and (max-width: 1000px) {
-    font-size: $emphFont/2;
+    font-size: $emphSize/2;
   }
 }
 

@@ -6,7 +6,7 @@
 .main-window {
   width: calc(100%-45px);
   height: 100vh;
-  margin-left: 45px;
+  margin-left: 3rem;
   padding: 0px 25px;
   background: transparent;
   display: grid;
@@ -19,8 +19,15 @@
   }
 }
 
+canvas {
+  overflow: none;
+  width: calc(100% - 1rem);
+  min-height: 100%;
+}
+
 #root {
   background: black;
+  min-height: 100vh;
 }
 
 .App {
@@ -37,7 +44,6 @@
   height: 100%;
   width: 100%;
   display: grid;
-  background: $secondary;
   background-size: cover;
 }
 
@@ -57,88 +63,6 @@
 }
 
 //! MASTER COMPONENT STYLING
-.button {
-  display: inline-block;
-  width: 130px;
-  height: 50px;
-  padding: 10px;
-  margin: 20px 0;
-
-  color: $tertiary;
-  text-align: center;
-  background: transparent;
-
-  border-style: solid;
-  border-radius: 25px;
-
-  text-transform: uppercase;
-  font-family: "Oswald";
-  text-decoration: underline;
-
-  transition: 0.2s;
-  box-shadow: 6px 6px 4px $primary;
-
-  @media screen and (max-width: 1000px) {
-    transform: scale(0.8);
-  }
-
-  &:hover {
-    color: $secondary;
-    background: $tertiary;
-    border: $tertiary solid;
-    box-shadow: 0 0 10px $tertiary;
-    transform: scale(1.1);
-
-    @media screen and (max-width: 1000px) {
-      transform: scale(0.9);
-    }
-  }
-}
-
-.small-button {
-  width: 80px;
-  height: 30px;
-  margin: 20px 0;
-  display: inline-block;
-  background: transparent;
-  text-align: center;
-  color: $tertiary;
-  border: $tertiary solid;
-  border-radius: 25px;
-  text-transform: uppercase;
-  font-family: "Oswald";
-  text-decoration: underline;
-  transition: 0.2s;
-  box-shadow: 6px 6px 4px $primary;
-
-  &:hover {
-    color: $secondary;
-    background: $tertiary;
-    border: $tertiary solid;
-    box-shadow: 0 0 10px $tertiary;
-    transform: scale(1.1);
-  }
-}
-
-.twitter-container {
-  width: 100%;
-
-  .twitter {
-    width: 150px;
-    height: 40px;
-    background: $twitterBlue;
-    color: white;
-    font-family: "helvetica", sans-serif;
-    font-size: 1.5em;
-    text-decoration: none;
-    display: grid;
-    place-items: center center;
-    border-radius: 20px;
-    justify-self: center;
-    align-self: center;
-    margin: auto;
-  }
-}
 
 .client-disclaimer {
   text-align: center;
@@ -164,13 +88,13 @@ h1 {
 }
 
 h3 {
-  margin: 30 0 10px 0;
+  margin: 3rem 0 1rem 0;
   @include headerSpec;
-  font-size: $subHeadSize;
+  font-size: $Head3Size;
   text-align: center;
 
   @media screen and (max-width: 1000px) {
-    font-size: $subHeadSize/2;
+    font-size: $Head3Size/2;
   }
 }
 
@@ -216,10 +140,10 @@ ul {
 }
 
 //! FINAL IMPORTS FOR OVERRIDES
-//// That means the weird projects .right pane will work correctly
 
 @import "./home";
 @import "./about";
 @import "./skills";
 @import "./projects";
 @import "./contact";
+@import "./button";
