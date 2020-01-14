@@ -8,7 +8,6 @@ import Stars from "./js/Stars";
 
 ReactDOM.render(
   <HashRouter>
-    <Stars />
     <App />
   </HashRouter>,
   document.getElementById("root")

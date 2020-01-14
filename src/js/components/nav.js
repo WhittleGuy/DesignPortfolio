@@ -14,19 +14,19 @@ class Nav extends Component {
           </Link>
 
           <div className="nav-links">
-            <NavLink className="home" id="non_mobile" to="./home">
+            <NavLink className="home" to="./home">
               Home
             </NavLink>
-            <NavLink className="about" id="non_mobile" to="./about">
+            <NavLink className="about" to="./about">
               About
             </NavLink>
-            <NavLink className="skills" id="non_mobile" to="./skills">
+            <NavLink className="skills" to="./skills">
               Skills
             </NavLink>
-            <NavLink className="projects" id="non_mobile" to="./projects">
+            <NavLink className="projects" to="./projects">
               Projects
             </NavLink>
-            <NavLink className="contact" id="non_mobile" to="./contact">
+            <NavLink className="contact" to="./contact">
               Contact
             </NavLink>
           </div>
