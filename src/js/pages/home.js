@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import Sines from "../../images/Graphics/Sines.svg";
-import Resume from "../../images/Whittle, Brandon - Resume.pdf";
+import React, { Component } from 'react';
+import Sines from '../../images/Graphics/Sines.svg';
+import Resume from '../../images/Whittle, Brandon - Resume.pdf';
 
 class Home extends Component {
   render() {
     return (
-      <div className="home-container main-window">
+      <div className='home-container main-window'>
         <div>
           <h1>
             Hello!
@@ -14,26 +14,19 @@ class Home extends Component {
             <br />
             professional shitshow.
           </h1>
-          <p className="subtitle">
-            Graphic Designer / Audio Engineer / Media Producer
-          </p>
+          <p className='subtitle'>Graphic Designer / Audio Engineer / Media Producer</p>
 
-          <div className="external-links">
-            <a
-              className="button"
-              href={Resume}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className='external-links'>
+            <a className='button' href='' target='_blank' rel='noopener noreferrer'>
               Resume
             </a>
-            <a className="button" href="#/contact">
+            <a className='button' href='#/contact'>
               Contact Me
             </a>
           </div>
         </div>
 
-        <img className="sines bottom-graphic" src={Sines} alt="Sines" />
+        <img className='sines bottom-graphic' src={Sines} alt='Sines' />
       </div>
     );
   }
